@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>frontpage</title>
+
+    <style>
+        label {
+            float:left;
+            width:5%;
+            text-align: right;
+            margin-right: 0.5em;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .form-field-no-caption{
+            margin-left: 5%;
+            padding-left: 0.5em;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+<h1>BoxCalService</h1>
+<h2>All requests</h2>
+<a href="controllers/getRequests.php">All requests</a>
+
+
+<form action="controllers/CalBoxVolume.php" method="post">
+    Længde:  <input type="text" name="length"></br>
+    Højde:  <input type="text" name="width"></br>
+    Bredde:  <input type="text" name="height"></br>
+    <button name="submit" value="Submit">Beregn</button>
+</form>
+
+</body>
+</html>

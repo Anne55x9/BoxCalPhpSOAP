@@ -11,7 +11,7 @@ Twig_Autoloader::register();
 
 $loader = new Twig_Loader_Filesystem('../views');
 $twig = new Twig_Environment($loader, array('auto_reload' => true));
-$template = $twig->loadTemplate('index.html.twig');
+$template = $twig->loadTemplate('volResultView.html.twig');
 
 if(isset($_POST['length'])){
     try{
@@ -28,6 +28,9 @@ if(isset($_POST['length'])){
 }
 
 echo $template->render($default);
+
+
+
 ?>
 
 

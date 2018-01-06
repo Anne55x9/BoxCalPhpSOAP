@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RequestView</title>
+</head>
+<body>
+
+
+<h1>Requests</h1>
+
+{% if requests is empty%}
+    No requests
+{%else %}
+    <ul>
+        {% for req in requests %}
+            <li>
+                {{req.Request}}
+
+            </li>
+        {%endfor %}</ul>
+{%endif%}
+
+
+
+
+
+</body>
+</html>
