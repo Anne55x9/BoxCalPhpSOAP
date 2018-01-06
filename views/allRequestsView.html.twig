@@ -9,6 +9,7 @@
 
 <h1>Requests</h1>
 
+
 {% if requests is empty%}
     No requests
 {%else %}
@@ -16,6 +17,11 @@
         {% for req in requests %}
             <li>
                 {{req.Request}}
+                {{req.Volume}}
+                {{req.Length}}
+                {{req.Width}}
+                {{req.Height}}
+
 
             </li>
         {%endfor %}</ul>
